@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Author Table</h1>
+        <table border="3px">
+            <tr>
+                <th>PK</th>
+                <th>Bid</th>
+                <th>Name</th>
+                <th>DOB</th>
+                <th>URL</th>
+            </tr>
+            {% for AO in QLAO %}
+            <tr>
+                <th>{{AO.pk}}</th>
+                <th>{{AO.bid}}</th>
+                <th>{{AO.name}}</th>
+                <th>{{AO.DOB}}</th>
+                <th>{{AO.URL}}</th>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 >Table Book</h1>
+        <table border="3px">
+            <tr>
+                <th>Bid</th>
+                <th>Bname</th>
+                <th>Publish</th>
+                <th>Price</th>
+            </tr>
+            {% for BO in QLBO %}
+            <tr>
+                <td>{{ BO.bid }}</td>    
+                <td>{{ BO.bname }}</td>
+                <td>{{BO.publish}}</td>
+                <td>{{BO.price}}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+    </center>
+</body>
+</html>
